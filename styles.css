@@ -1,0 +1,514 @@
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  box-sizing: border-box;
+  padding-bottom: 2625px;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 0 42px;
+  margin-right: 0;
+}
+
+.logo {
+  width: 166px;
+  height: 51px;
+  background: no-repeat no-repeat url(img/tesla-logotype.svg);
+  cursor: pointer;
+}
+
+.menu__item {
+  border: dashed 1px red;
+  padding: 0 13px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.main__ModelS {
+  cursor: default;
+  margin: 0;
+  /*position: absolute;*/
+  width: 370px;
+  height: 110px;
+  left: 535px;
+  top: 133px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 110px;
+  color: #000;
+  z-index: 1;
+}
+
+.main__subtitle1 {
+  cursor: default;
+  word-spacing: -1px;
+  margin: 0;
+  /*position: absolute;*/
+  width: 245px;
+  height: 19px;
+  left: 600px;
+  top: 233px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+  z-index: 1;
+}
+
+.menu__item_active {
+  letter-spacing: -0.7px;
+  text-decoration: none;
+  /*position: absolute;*/
+  width: 62px;
+  left: 466.86px;
+  top: 41px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 17px;
+  color: #e51937;
+}
+
+.menu__item-X {
+  text-decoration: none;
+  /*position: absolute;*/
+  width: 63px;
+  height: 19px;
+  left: 592px;
+  top: 40px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.menu__item-3 {
+  text-decoration: none;
+  /*position: relative;*/
+  width: 61px;
+  height: 19px;
+  left: 680px;
+  top: 40px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.menu__item-roadster {
+  text-decoration: none;
+  /*position: absolute;*/
+  width: 70px;
+  height: 19px;
+  left: 785px;
+  top: 40px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.menu__item-energy {
+  text-decoration: none;
+  /*position: absolute;*/
+  width: 55px;
+  height: 19px;
+  left: 901px;
+  top: 40px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.magazine-page {
+  text-decoration: none;
+  /*position: absolute;*/
+  width: 69px;
+  height: 19px;
+  left: 1177px;
+  top: 40px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.login-page {
+  text-decoration: none;
+  /*position: absolute;*/
+  width: 50px;
+  height: 19px;
+  left: 1276px;
+  top: 40px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+}
+
+.menu__button {
+  margin-right: 60px;
+  width: 24px;
+  height: 15px;
+  left: 1356px;
+  top: 42px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+  background: no-repeat no-repeat url(img/menu-button.svg);
+}
+
+.menu__item_active:hover,
+.menu__item-X:hover,
+.menu__item-3:hover,
+.menu__item-roadster:hover,
+.menu__item-energy:hover,
+.magazine-page:hover,
+.login-page:hover,
+.main__button-order:hover,
+.menu__button:hover,
+.learn-more:hover,
+.main__button-order2:hover,
+.main__button-order3:hover,
+.learn-more2:hover {
+  opacity: 0.4;
+  transition: opacity 0.5s;
+}
+
+#menu__toggle {
+  display: none;
+}
+
+.menu__item_active::after {
+  top: 24px;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: no-repeat no-repeat url(img/vector.svg);
+}
+.tesla-background {
+  margin: 0;
+  position: absolute;
+  width: 1440px;
+  height: 467px;
+  left: 0;
+  top: 135px;
+  background: no-repeat no-repeat url(img/tesla-background.svg);
+}
+
+.tesla-car1 {
+  margin: 0;
+  position: absolute;
+  width: 968px;
+  height: 450px;
+  left: 199px;
+  top: 278px;
+  background: no-repeat no-repeat url(img/tesla-car1.svg);
+}
+
+.speed {
+  margin: 0;
+  position: absolute;
+  width: 380px;
+  height: 65px;
+  left: 317px;
+  top: 754px;
+  background: no-repeat no-repeat url(img/tesla-speed.svg);
+}
+
+.testdrive {
+  margin: 0;
+  position: absolute;
+  width: 123px;
+  height: 30px;
+  left: 797px;
+  top: 774px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: no-repeat no-repeat url(img/tesla-testdrive.svg);
+}
+
+.main__button-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #e51937;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 958px;
+  top: 764px;
+  border: 2px solid #e51937;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.subpage {
+  margin: 0;
+  position: absolute;
+  width: 34px;
+  height: 20px;
+  left: 703px;
+  top: 846px;
+  background: no-repeat url(img/vector2.svg);
+}
+
+.main__background1 {
+  margin: 0;
+  position: absolute;
+  width: 440px;
+  height: 900px;
+  left: 1000px;
+  top: 900px;
+  background: #e51937;
+}
+
+.main__subtitle2 {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  width: 316px;
+  height: 37px;
+  left: 1052px;
+  top: 951px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.tesla-car2 {
+  margin: 0;
+  position: absolute;
+  width: 1440px;
+  height: 844px;
+  left: 0;
+  top: 956px;
+  background: no-repeat no-repeat url(img/tesla-car2.svg);
+}
+
+.main__ModelS2 {
+  cursor: default;
+  margin: 0;
+  position: absolute;
+  width: 288px;
+  height: 86px;
+  left: 80px;
+  top: 952px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 110px;
+  color: #e51937;
+  z-index: 1;
+}
+
+.main__subtitle3 {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  width: 316px;
+  height: 200px;
+  left: 1052px;
+  top: 1002px;
+  font: 500 15px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.display {
+  margin: 0;
+  position: absolute;
+  width: 187px;
+  height: 65px;
+  left: 1052px;
+  top: 1259px;
+  background: no-repeat url(img/display.svg);
+}
+
+.wireless-soft {
+  margin: 0;
+  position: absolute;
+  width: 269px;
+  height: 71px;
+  left: 1048px;
+  top: 1359px;
+  background: no-repeat url(img/wireless-soft.svg);
+}
+
+.bag-capacity {
+  margin: 0;
+  position: absolute;
+  width: 202px;
+  height: 71px;
+  left: 1052px;
+  top: 1455px;
+  background: no-repeat url(img/bag-capacity.svg);
+}
+
+.main__button-order2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 1236px;
+  top: 1697px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.learn-more {
+  margin: 0;
+  background: no-repeat no-repeat url(img/learn-more.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 1049px;
+  top: 1705px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.main__five-stars {
+  margin: 0;
+  background: no-repeat url(img/five-stars.svg);
+  position: absolute;
+  width: 440px;
+  height: 900px;
+  left: 0px;
+  top: 1800px;
+}
+
+.main__subtitle4 {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  width: 316px;
+  height: 74px;
+  left: 56px;
+  top: 1851px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-size: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main__subtitle5 {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  width: 316px;
+  height: 134px;
+  left: 56px;
+  top: 1938px;
+  font: 500 15px/18px Montserrat-Medium, arial, helvetica, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main__button-order3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 225px;
+  top: 2600px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.learn-more2 {
+  margin: 0;
+  background: no-repeat no-repeat url(img/learn-more.svg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 38px;
+  top: 2608px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tesla-background2 {
+  margin: 0;
+  position: absolute;
+  width: 793px;
+  height: 269px;
+  left: 647px;
+  top: 1942px;
+  background: no-repeat no-repeat url(img/tesla-background2.svg);
+}
+
+.tesla-car3 {
+  margin: 0;
+  position: absolute;
+  width: 1049px;
+  height: 592px;
+  left: 345px;
+  top: 1971px;
+  background: no-repeat url(img/tesla-car3.svg);
+}
+
+.WHS-logo {
+  margin: 0;
+  position: absolute;
+  width: 93px;
+  height: 40px;
+  left: 1328px;
+  top: 2650px;
+  background: no-repeat no-repeat url(img/WHS-Prod.svg);
+}
