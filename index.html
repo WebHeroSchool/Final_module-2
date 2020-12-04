@@ -7,61 +7,48 @@
     <link rel="stylesheet" href="fonts.css">
     <title>Tesla</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="logo"></div>
-        <nav class="menu__item">
-          <a class="menu__item_active" href="#">Model S</a>
-          <a class="menu__item-X" href="#">Model X</a>
-          <a class="menu__item-3" href="#">Model 3</a>
-          <a class="menu__item-roadster" href="#">Roadster</a>
-          <a class="menu__item-energy" href="#">Energy</a>
-          <a class="magazine-page" href="#">Магазин</a>
-          <a class="login-page" href="#">Войти</a>
-        </nav>
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__button" for="menu__toggle">
-          <span></span>
-        </label>
-      </header>
-        <main class="main">
-          <p class="main__ModelS">Model S</p>
-          <p class="main__subtitle1">Добро пожаловать в будущее!</p>
-          <p class="tesla-background"></p>
-          <p class="tesla-car1"></p>
-          <p class="speed"></p>
-          <p class="testdrive"></p>
-          <a class="main__button-order">ЗАКАЗАТЬ</a>
-          <p class="subpage"></p>
-          <p class="main__ModelS2">Model S</p>
-          <p class="tesla-car2"></p>
-          <p class="main__background1"></p>
-          <p class="main__subtitle2">Будущее вождения</p>
-          <p class="main__subtitle3">
-            Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей.
-            Оснащена современным 17-&nbsp;дюймовым сенсорным экраном.
-            Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи,
-            а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
-          </p>
-          <p class="display"></p>
-          <p class="wireless-soft"></p>
-          <p class="bag-capacity"></p>
-          <p class="learn-more"></p>
-          <a class="main__button-order2">ЗАКАЗАТЬ</a>
-          <p class="main__five-stars"></p>
-          <p class="main__subtitle4">Самый безопасный автомобиль в мире</p>
-          <p class="main__subtitle5">
-            Модель S достигла наивысшей оценки безопасности любого автомобиля,
-            когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров -
-            от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
-          </p>
-          <p class="learn-more2"></p>
-          <a class="main__button-order3">ЗАКАЗАТЬ</a>
-          <p class="tesla-background2"></p>
-          <p class="tesla-car3"></p>
-          <p class="WHS-logo"></p>
-        </main>
-    </div>
-  </body>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="logo"></div>
+      <nav class="menu__models">
+        <a class="menu__models_item menu__models_item_1_active" href="#">Model S</a>
+        <a class="menu__models_item menu__models_item_2" href="#">Model X</a>
+        <a class="menu__models_item menu__models_item_3" href="#">Model 3</a>
+        <a class="menu__models_item menu__models_item_4" href="#">Roadster</a>
+        <a class="menu__models_item menu__models_item_5" href="#">Energy</a>
+      </nav>
+      <div class="menu__shop">
+        <a class="menu__shop_item" href="#">Магазин</a>
+        <a class="menu__shop_item" href="#">Войти</a>
+        <div class="menu__shop_item-burger"></div>
+      </div>
+    </header>
+  </div>
+    <section class="main__section1">
+      <p class="main__section1_title">Model S</p>
+      <p class="main__section1_subtitle">Добро пожаловать в будущее!</p>
+      <img class="car1" src="img/tesla-car1.svg" alt="">
+      <div class="character">
+        <div class="character1">
+          <div class="speed">
+            <p class="speedtable"></p>
+            2,7
+            <span class="seconds">сек</span>
+            <p class="acceleration">0-100 км/ч</p>
+          </div>
+
+          <div class="power_reserve">
+            <p class="road"></p>
+            632
+            <span class="kilometres">км</span>
+          </div>
+        </div>
+        <div class="character2">
+          <p class="test_drive">ТЕСТ ДРАЙВ</p>
+          <a class="button_order" href="#">ЗАКАЗАТЬ</a>
+        </div>
+      </div>
+    </section>
+</body>
 </html>
