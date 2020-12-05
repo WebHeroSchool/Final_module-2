@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding-bottom: 2700px;
 }
 
 .wrapper {
@@ -155,30 +154,29 @@ body {
 
 /* Далее идет блок с характеристиками и кнопкой Заказать*/
 
-.character {
+.section1__characteristics {
   margin: 0 auto;
+  margin-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 56.2%;
+  width: 56%;
   height: 75px;
-  border: dashed 1px red;
 }
 
 /*Второстепенный блок со скоростью и километрами*/
 
-.character1 {
+.section1__characteristics1 {
   font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 375px;
-  height: 58px;
-  border: dashed 1px red;
+  width: 377px;
+  height: 70px;
 }
 
-.speed {
+.section1__characteristics1-speed {
   width: 154px;
   height: 58px;
   font-size: 35px;
@@ -186,58 +184,148 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: dashed 1px red;
 }
 
 .speedtable {
   margin: 0;
-  width: 55px;
+  width: 52px;
   height: 35px;
   background: no-repeat url(img/tesla-speed.svg);
-  border: dashed 1px red;
 }
 
-.seconds {
+.parametres1__speed_value {
+  margin: 0;
+  margin-right: 4px;
+}
+
+.parametres1__seconds {
   font-size: 20px;
 }
 
-.acceleration {
-  margin: 0;
-  font-size: 12px;
-  border: dashed 1px red;
+.parametres1,
+.parametres2 {
+  display: flex;
+  align-items: baseline;
 }
 
-.power_reserve {
-  width: 140px;
-  height: 58px;
+.acceleration,
+.powerreserve {
+  margin: 0;
+  margin-bottom: 4px;
+  margin-right: 11px;
+  font-family: Montserrat-Medium, arial, helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.section1__characteristics1-power_reserve {
+  width: 144px;
+  height: 70px;
   font-size: 35px;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: dashed 1px red;
 }
 
 .road {
   margin: 0;
-  width: 50px;
-  height: 48px;
+  width: 45px;
+  height: 60px;
+  transform: translate(0, 7px);
   background: no-repeat url(img/road.svg);
-  border: dashed 1px red;
 }
 
 .kilometres {
+  padding-left: 5px;
   font-size: 20px;
+}
+
+.powerreserve {
+  margin-right: 1px;
 }
 
 /*Второстепенный блок с тест-драйвом и ЗАКАЗАТЬ*/
 
-.character2 {
+.section1__characteristics2 {
+  font-family: Montserrat-Bold, arial, helvetica, sans-serif;
   margin: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 318px;
   height: 40px;
-  border: dashed 1px red;
+}
+
+.section1__characteristics2-test_drive,
+.section1__characteristics2-button_order {
+  margin: 0;
+  font-size: 13px;
+  text-decoration: none;
+  }
+
+.section1__characteristics2-button_order {
+  border: solid 3px #e51937;
+  color: #e51937;
+  padding: 9px 41px;
+  transform: translate(-2px, 1px);
+}
+
+.section1__characteristics2-test_drive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  height: 22px;
+  text-decoration: none;
+  color: #000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.section1__characteristics2-test_drive::before {
+  content: '';
+  transform: translate(-5px);
+  width: 22px;
+  height: 22px;
+  background: no-repeat url(img/test-drive_wheel.svg);
+}
+
+.vector {
+margin: 0 auto;
+margin-bottom: 34px;
+display: flex;
+align-items: center;
+}
+
+.section2__characteristics {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section2__characteristics-leftbackground {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 1548px;
+  height: 844px;
+  background: no-repeat url(img/tesla-car2.svg);
+}
+
+.section2__characteristics-leftbackground-model-s {
+  margin: 0;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-size: 70px;
+  color: #e51937;
+}
+
+.section2__characteristics-rightbackground {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 440px;
+  height: 900px;
+  background: no-repeat url(img/tesla-background2.svg);
 }
