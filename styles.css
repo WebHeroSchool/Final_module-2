@@ -123,6 +123,7 @@ body {
   height: 467px;
   background: center no-repeat url(img/tesla-background.svg);
   background-size: contain;
+  margin-bottom: 312px;
 }
 
 .main__section1_title {
@@ -290,42 +291,8 @@ body {
 }
 
 .vector {
-margin: 0 auto;
-margin-bottom: 34px;
-display: flex;
-align-items: center;
-}
-
-.section2__characteristics {
   margin: 0 auto;
+  margin-bottom: 34px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.section2__characteristics-leftbackground {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 1548px;
-  height: 844px;
-  background: no-repeat url(img/tesla-car2.svg);
-}
-
-.section2__characteristics-leftbackground-model-s {
-  margin: 0;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-size: 70px;
-  color: #e51937;
-}
-
-.section2__characteristics-rightbackground {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 440px;
-  height: 900px;
-  background: no-repeat url(img/tesla-background2.svg);
+  align-items: center;
 }
