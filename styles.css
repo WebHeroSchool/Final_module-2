@@ -226,7 +226,7 @@ body {
 
 /*Второстепенный блок с тест-драйвом и ЗАКАЗАТЬ*/
 
-.order {
+.order-wrap {
   font-family: Montserrat-Bold, arial, helvetica, sans-serif;
   margin: 0;
   display: flex;
@@ -236,21 +236,21 @@ body {
   height: 40px;
 }
 
-.order__text,
-.order__order-button {
+.order-wrap__text,
+.order-wrap__button {
   margin: 0;
   font-size: 13px;
   text-decoration: none;
   }
 
-.order__order-button {
+.order-wrap__button {
   border: solid 3px #e51937;
   color: #e51937;
   padding: 9px 41px;
   transform: translate(-2px, 1px);
 }
 
-.order__text {
+.order-wrap__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,7 +261,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.order__text::before {
+.order-wrap__text::before {
   content: '';
   transform: translate(-5px);
   width: 22px;
@@ -279,10 +279,3 @@ body {
 /** {
   border: dashed 1px red;
 }*/
-
-.section-two {
-  display: flex;
-  justify-content: space-between;
-}
-
-.decrp__img_display
