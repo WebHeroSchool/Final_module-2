@@ -119,16 +119,14 @@ body {
 
 /*Далее идет первый блок с заставкой Надпись и Машина*/
 
-.main__section1 {
-  height: 467px;
+.section-one {
   background: center no-repeat url(img/tesla-background.svg);
   background-size: contain;
   background-position-y: -12px;
   background-position-x: 37px;
-  margin-bottom: 286px;
 }
 
-.main__section1_title {
+.section-one__title {
   margin: 0 auto;
   height: 82px;
   display: flex;
@@ -137,7 +135,7 @@ body {
   font: 90px/110px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
 
-.main__section1_subtitle {
+.section-one__subtitle {
   margin: 0 auto;
   margin-bottom: 19px;
   height: 26px;
@@ -147,7 +145,7 @@ body {
   font: 15px/19px Montserrat-SemiBold, arial, helvetica, sans-serif;
 }
 
-.car1 {
+.section-one__img {
   height: 42vh;
   background: no-repeat url(img/tesla-car1.svg);
   background-size: contain;
@@ -157,7 +155,7 @@ body {
 
 /* Далее идет блок с характеристиками и кнопкой Заказать*/
 
-.section1__characteristics {
+.characteristics-wrap {
   margin: 0 auto;
   margin-bottom: 24px;
   display: flex;
@@ -169,17 +167,17 @@ body {
 
 /*Второстепенный блок со скоростью и километрами*/
 
-.section1__characteristics1 {
+.characteristics-wrap__item {
   font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 377px;
+  width: 380px;
   height: 70px;
 }
 
-.section1__characteristics1-speed {
+.decrp {
   width: 154px;
   height: 58px;
   font-size: 35px;
@@ -189,11 +187,18 @@ body {
   align-items: center;
 }
 
-.speedtable {
+.decrp__img {
   margin: 0;
   width: 52px;
   height: 35px;
   background: no-repeat url(img/tesla-speed.svg);
+}
+
+.decrp__img_dist {
+  margin: 0;
+  width: 45px;
+  height: 56px;
+  background: no-repeat url("./img/road.svg");
 }
 
 .parametres1__speed_value {
@@ -201,18 +206,17 @@ body {
   margin-right: 4px;
 }
 
-.parametres1__seconds {
+.decrp__text {
   font-size: 20px;
+  padding-left: 5px;
 }
 
-.parametres1,
-.parametres2 {
+.decrp__title {
   display: flex;
   align-items: baseline;
 }
 
-.acceleration,
-.powerreserve {
+.decrp__acceleration {
   margin: 0;
   margin-bottom: 4px;
   margin-right: 11px;
@@ -220,36 +224,9 @@ body {
   font-size: 12px;
 }
 
-.section1__characteristics1-power_reserve {
-  width: 144px;
-  height: 70px;
-  font-size: 35px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.road {
-  margin: 0;
-  width: 45px;
-  height: 60px;
-  transform: translate(0, 7px);
-  background: no-repeat url(img/road.svg);
-}
-
-.kilometres {
-  padding-left: 5px;
-  font-size: 20px;
-}
-
-.powerreserve {
-  margin-right: 1px;
-}
-
 /*Второстепенный блок с тест-драйвом и ЗАКАЗАТЬ*/
 
-.section1__characteristics2 {
+.order {
   font-family: Montserrat-Bold, arial, helvetica, sans-serif;
   margin: 0;
   display: flex;
@@ -259,21 +236,21 @@ body {
   height: 40px;
 }
 
-.section1__characteristics2-test_drive,
-.section1__characteristics2-button_order {
+.order__text,
+.order__order-button {
   margin: 0;
   font-size: 13px;
   text-decoration: none;
   }
 
-.section1__characteristics2-button_order {
+.order__order-button {
   border: solid 3px #e51937;
   color: #e51937;
   padding: 9px 41px;
   transform: translate(-2px, 1px);
 }
 
-.section1__characteristics2-test_drive {
+.order__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,7 +261,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.section1__characteristics2-test_drive::before {
+.order__text::before {
   content: '';
   transform: translate(-5px);
   width: 22px;
@@ -303,48 +280,9 @@ body {
   border: dashed 1px red;
 }*/
 
-.main__section2 {
+.section-two {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.main__section2_leftbackground {
-  height: 900px;
-  background: no-repeat url(img/tesla-car2.svg);
-  min-width: 69.45%;
-  background-size: cover;
-}
-
-.main__section2_leftbackground-title {
-  margin: 0;
-  padding-top: 8px;
-  padding-left: 80px;
-  width: 288px;
-  height: 86px;
-  font-family: Montserrat-SemiBold, arial, helvetica,sans-serif;
-  font-size: 70px;
-  color: #e51937;
-}
-
-.main__section2_rightbackground {
-  display: flex;
-  flex-direction: column;
-  height: 900px;
-  background-color: #e51937;
-}
-
-.main__section2_rightbackground-title {
-  margin: 0;
-  font-family: Montserrat-SemiBold, arial, helvetica,sans-serif;
-  font-size: 30px;
-  color: #fff;
-  padding-top: 51px;
-  padding-right: 20px;
-}
-
-.main__section2_rightbackground-subtitle {
-  margin: 0;
-  padding: 9px 12% 0 12%;
-  font-family: Montserrat-Medium, arial, helvetica, sans-serif;
-  font-size: 15px;
-}
+.decrp__img_display
