@@ -276,6 +276,78 @@ body {
   align-items: center;
 }
 
-/** {
-  border: dashed 1px red;
-}*/
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__background {
+  background: no-repeat url(./img/tesla-car2.svg);
+  background-position-y: 56px;;
+  width: 69.45%;
+  height: 900px;
+}
+
+.section__background-title {
+  margin: 0;
+  position: relative;
+  top: 64px;
+  left: 80px;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-size: 70px;
+  color: #e51937;
+}
+
+.section__characteristics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e51937;
+  height: 900px;
+  width: 30.55%;
+}
+
+.order-wrap__text_white,
+.order-wrap__button_white {
+  color: #fff;
+}
+
+.decrp__img_display {
+  margin: 0;
+  width: 55px;
+  height: 53px;
+  background: no-repeat url(./img/display.svg);
+}
+
+.decrp__img_wifi {
+  margin: 0;
+  width: 44px;
+  height: 34px;
+  background: no-repeat url(img/wifi.svg);
+}
+
+.decrp__img_bag {
+  margin: 0;
+  width: 36px;
+  height: 52px;
+  background: no-repeat url(img/bag-capacity.svg);
+}
+
+.section__characteristics-title {
+  width: 76%;
+  padding: 4.7vh 0 1vh 0;;
+  margin: 0 auto;
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.section__characteristics-subtitle {
+  width: 75%;
+  padding-bottom: 6.5vh;
+  margin: 0 auto;
+  font-family: Montserrat-Medium, arial, helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+}
