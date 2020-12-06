@@ -3,6 +3,10 @@ body {
   max-width: 1440px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 94%;
@@ -178,13 +182,15 @@ body {
 }
 
 .decrp {
-  width: 154px;
-  height: 58px;
   font-size: 35px;
   margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.decrp__item {
+  padding-left: 1.2vh;
 }
 
 .decrp__img {
@@ -195,10 +201,12 @@ body {
 }
 
 .decrp__img_dist {
+  /* border: dashed 1px red; */
   margin: 0;
-  width: 45px;
-  height: 56px;
+  width: 35px;
+  height: 70px;
   background: no-repeat url("./img/road.svg");
+  background-position: bottom;
 }
 
 .parametres1__speed_value {
@@ -220,7 +228,7 @@ body {
   margin: 0;
   margin-bottom: 4px;
   margin-right: 11px;
-  font-family: Montserrat-Medium, arial, helvetica, sans-serif;
+  font-family: Montserrat-Regular, arial, helvetica, sans-serif;
   font-size: 12px;
 }
 
@@ -299,12 +307,13 @@ body {
 }
 
 .section__characteristics {
+  padding-left: 4.9vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #e51937;
   height: 900px;
   width: 30.55%;
+  align-items: flex-start;
 }
 
 .order-wrap__text_white,
@@ -312,42 +321,74 @@ body {
   color: #fff;
 }
 
+.order-wrap__text_white {
+  width: 46%;
+}
+
+.order-wrap__button_white {
+  border: solid 3px #fff;
+}
+
 .decrp__img_display {
+  height: 5vh;
   margin: 0;
-  width: 55px;
-  height: 53px;
   background: no-repeat url(./img/display.svg);
 }
 
 .decrp__img_wifi {
   margin: 0;
-  width: 44px;
-  height: 34px;
   background: no-repeat url(img/wifi.svg);
 }
 
 .decrp__img_bag {
+  height: 6vh;
   margin: 0;
-  width: 36px;
-  height: 52px;
   background: no-repeat url(img/bag-capacity.svg);
 }
 
 .section__characteristics-title {
-  width: 76%;
-  padding: 4.7vh 0 1vh 0;;
-  margin: 0 auto;
+  padding: 4.7vh 0 1vh 0;
+  width: 85%;
+  margin: 0;
   font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
   font-size: 30px;
   color: #fff;
 }
 
 .section__characteristics-subtitle {
-  width: 75%;
-  padding-bottom: 6.5vh;
-  margin: 0 auto;
+  padding-bottom: 5.55vh;
+  width: 79%;
+  margin: 0;
   font-family: Montserrat-Medium, arial, helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #fff;
+}
+
+.decrp__value,
+.decrp__text {
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+}
+
+.decrp__title_white,
+.decrp__acceleration_white {
+  color: #fff;
+}
+
+.decrp__acceleration_white {
+  width: 11vh;
+}
+
+.decrp_white {
+  padding-bottom: 2.7vh;
+}
+
+.order-wrap_white {
+  width: 32vh;
+  padding-top: 14vh;
+}
+
+.order-wrap__text_white::before {
+  background: no-repeat url(./img/inf-label.svg);
+  padding-right: 1vh;
 }
