@@ -286,20 +286,26 @@ body {
 .section {
   display: flex;
   justify-content: space-between;
-  background: no-repeat url(./img/tesla-car2.svg);
   height: 900px;
   background-position: left bottom;
 }
 
 .section__left {
+  background: no-repeat url(./img/tesla-car2.svg);
+  background-position: bottom;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  width: 31%;
+  width: 1000px;
 }
 
 .section__left-title {
-  margin: 0.91em 0;
+  width: 84%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   font-family: Montserrat-SemiBold, arial, helvetica,sans-serif;
   font-size: 70px;
   color: #e51937;
@@ -309,7 +315,7 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  width: 30.55%;
+  width: 440px;
   background-color: #e51937;
 }
 
@@ -410,4 +416,8 @@ body {
 
 .section__left_reverse {
   background-color: #e51937;
+}
+
+.section_reverse {
+  flex-direction: row-reverse;
 }
