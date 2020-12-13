@@ -413,3 +413,136 @@ body {
 .section__left-title_model {
   margin-top: 64px;
 }
+
+@media (max-width: 931px) {
+  .menu__models,
+  .menu__shop_item {
+    display: none;
+  }
+
+  .wrapper {
+    width: 96%;
+  }
+
+  .menu__shop_item-burger {
+    width: 36px;
+    height: 25px;
+    background: no-repeat url(img/burger-menu-iPad.svg);
+  }
+
+  .menu__shop {
+    width: 10%;
+  }
+
+  .header {
+    margin-bottom: 95px;
+  }
+
+  .section-one {
+    background: center no-repeat url(img/tesla-background+car-iPad.svg);
+    height: 56vh;
+    margin-bottom: 285px;
+  }
+
+  .section-one__img {
+    display: none;
+  }
+
+  .section-one__subtitle {
+    margin-bottom: 453px;
+  }
+
+  .characteristics-wrap {
+    flex-direction: column;
+    margin-bottom: 173px;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+
+  .characteristics-wrap__item {
+    width: 570px;
+    margin-bottom: 64px;
+    justify-content: space-around;
+  }
+
+  .order-wrap__text_red,
+  .order-wrap__button_red {
+    color: #e51937;
+    font-size: 16px;
+  }
+
+  .order-wrap__text::before {
+    background: no-repeat url(img/test-drive_wheel-red.svg);
+    width: 32px;
+    height: 32px;
+    padding-right: 15px;
+  }
+
+  .order-wrap__button_red {
+    background-color: #e51937;
+    border: none;
+    color: #fff;
+    padding: 18px 65px;
+  }
+
+  .order-wrap {
+    width: 421px;
+    height: 50px;
+  }
+
+  .decrp {
+    width: 203px;
+    font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+    font-size: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .decrp__img {
+    background: no-repeat url(img/tesla-speed-iPad.svg);
+    width: 66px;
+    height: 51px;
+  }
+
+  .decrp__img_dist {
+    background: no-repeat url(./img/road-iPad.svg);
+    background-position: bottom;
+    width: 50px;
+    height: 80px;
+  }
+
+  .decrp__item {
+    padding-left: 2vh;
+  }
+
+  .decrp__item_dist {
+    padding-left: 1.2vh;
+  }
+
+  .section__left {
+    background: no-repeat url(./img/tesla-car2.svg);
+    background-size: cover;
+  }
+
+  .section__right {
+    flex-direction:  row;
+    width: 768px;
+  }
+
+  .section__left-title_model {
+    margin: 0 auto;
+    margin-left: 196px;
+    margin-top: 9px;
+    width: 288px;
+  }
+
+  .section__left-title {
+    width: 38%;
+    font-family: Montserrat-SemiBold, arial, helvetica,sans-serif;
+    font-size: 70px;
+    color: #e51937;
+  }
+}
