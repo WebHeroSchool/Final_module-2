@@ -142,7 +142,7 @@ body {
 
 .section-one__subtitle {
   margin: 0 auto;
-  margin-bottom: 19px;
+  margin-bottom: 49px;
   height: 26px;
   display: flex;
   justify-content: center;
@@ -154,7 +154,7 @@ body {
   height: 42vh;
   background: no-repeat url(img/tesla-car1.svg);
   background-position: center;
-  margin-bottom: 20px;
+  margin-bottom: 53px;
 }
 
 /* Далее идет блок с характеристиками и кнопкой Заказать*/
@@ -277,7 +277,7 @@ body {
 
 .vector {
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
   display: flex;
   align-items: center;
 }
@@ -290,7 +290,7 @@ body {
 }
 
 .section__left {
-  background: no-repeat url(./img/tesla-car2.svg);
+  background: no-repeat url(./img/tesla-car2.png);
   background-size: 127%;
   display: flex;
   justify-content: space-around;
@@ -315,7 +315,7 @@ body {
 
 .section__right-title {
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 50px;
   margin-left: 52px;
   margin-bottom: 14px;
   font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
@@ -323,7 +323,7 @@ body {
 }
 
 .section__right-subtitle {
-  margin: 0 52px 61px;
+  margin: 0 52px 60px;
   font-family: Montserrat-Regular, arial, helvetica, sans-serif;
   font-size: 15px;
   line-height: 18px;
@@ -374,7 +374,7 @@ body {
 }
 
 .decrp_white_bag {
-  margin-bottom: 164px;
+  margin-bottom: 161px;
 }
 
 .decrp__item_white_wifi {
@@ -412,11 +412,126 @@ body {
   margin-top: 64px;
 }
 
-/* @media (max-width: 1439px)
-.section__left {
+.section_reverse {
+  flex-direction: row-reverse;
+}
+
+.section__left_reverse {
+  background: #fff;
+}
+
+.section__left-title_model_reverse {
+  font-size: 200px;
+  opacity: 0.1;
+  margin: 0;
+  padding-left: 179px;
+  padding-top: 97px;
+  transform: translate(10px, 0px);
+}
+
+.section__right-title_reverse {
+  margin-top: 51px;
+  margin-left: 55px;
+}
+
+.section__right-subtitle_reverse {
+  margin: 0 56px 56px 56px;
+  word-spacing: 1px;
+}
+
+.section__left-title_reverse {
+  width: 100%;
+}
+
+.section__right-title_reverse_rank {
+  margin-left: 56px;
+  margin-bottom: 25px;
+}
+
+.safety {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 92px 10px 56px;
+}
+
+.front,
+.side,
+.side-second,
+.driver,
+.passenger {
+  font-family: Montserrat-Bold, arial, helvetica, sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+
+.rack {
+  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.decrp__img_shield {
+  width: 63px;
+  height: 75px;
+  background: no-repeat url(./img/security-shield.svg);
   background-size: cover;
+}
+
+.iPad_right_reserve {
+  margin-bottom: 107px;
+}
+
+.decrp_reserve {
+  padding-left: 65px;
+  margin-bottom: 56px;
+}
+
+.decrp__value_reserve,
+.decrp__text_reserve {
+  font-size: 50px;
+}
+
+.decrp__acceleration_reserve {
+  font-family: Montserrat-Medium, arial, helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 0px;
+  padding-left: 2px;
+}
+
+.decrp__item_reserve {
+  padding-left: 2.2vh;
+}
+
+.decrp__title_reserve {
+  line-height: 44px;
+}
+
+.decrp__text_reserve {
+  padding-left: 15px;
+}
+
+.order-wrap_white_reserve {
+  margin-left: 10%;
+}
+
+.order-wrap__button_white_reserve {
+  margin-right: 12px;
+}
+
+.section_car3 {
+  position: absolute;
+  background: no-repeat url(img/tesla-car3.svg);
+  width: 1049px;
+  height: 592px;
+  transform: translate(-95px, -170px);
+}
+
+@media (max-width: 1439px) {
+  .section__left {
+    background-size: cover;
   }
-} */
+}
 
 @media (max-width: 931px) {
   .menu__models,
