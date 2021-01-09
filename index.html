@@ -1,230 +1,183 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fonts.css">
     <title>Tesla</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="logo"></div>
-        <nav class="menu__models">
-          <a class="menu__models_item menu__models_item_1_active" href="#">Model S</a>
-          <a class="menu__models_item menu__models_item_2" href="#">Model X</a>
-          <a class="menu__models_item menu__models_item_3" href="#">Model 3</a>
-          <a class="menu__models_item menu__models_item_4" href="#">Roadster</a>
-          <a class="menu__models_item menu__models_item_5" href="#">Energy</a>
+        <div class="logo">
+          <img src="img/logo.svg" class="logo__icon">
+        </div>
+        <nav class="menu">
+          <a class="menu__item menu__item_active" href="#">Model S</a>
+          <a class="menu__item" href="#">Model X</a>
+          <a class="menu__item" href="#">Model 3</a>
+          <a class="menu__item" href="#">Roadster</a>
+          <a class="menu__item" href="#">Energy</a>
         </nav>
-        <div class="menu__shop">
-          <a class="menu__shop_item" href="#">Магазин</a>
-          <a class="menu__shop_item" href="#">Войти</a>
-          <div class="menu__shop_item-burger"></div>
-        </div>
+        <nav class="menu-shop">
+          <a class="menu-shop__item menu-shop__item_magazine" href="#">Магазин</a>
+          <a class="menu-shop__item menu-shop__item_login" href="#">Войти</a>
+          <div class="menu-button"></div>
+        </nav>
       </header>
+      <section class="section-first">
+        <div class="tesla__title">
+          <h1 class="main__title">Model S</h1>
+          <p class="main__subtitle">Добро пожаловать в будущее!</p>
+        </div>
+        <div class="main__icon">
+          <img src="img/tesla-car1.svg" class="tesla-main">
+        </div>
+        <div class="main__decrp">
+          <div class="main__characters">
+            <div class="speed">
+              <div class="main-speed__column">
+                <span class="main-speed__title">2,7</span>
+                <span class="main-speed__text">сек</span>
+              </div>
+              <p class="main-speed__item">0-100 км/час</p>
+            </div>
+            <div class="distance">
+              <div class="main-distance__column">
+                <span class="main-distance__title">632</span>
+                <span class="main-distance__text">км</span>
+              </div>
+              <p class="main-distance__item">запас хода</p>
+            </div>
+          </div>
+          <div class="main__button">
+            <a class="main-text__button" href="">ТЕСТ ДРАЙВ</a>
+            <a class="main-buy__button" href="#">ЗАКАЗАТЬ</a>
+          </div>
+        </div>
+        <div class="vector"></div>
+      </section>
     </div>
-
- <!-- - - - - - - - - - - - - ПЕРВАЯ СЕКЦИЯ - - - - - - - - - - - - -->
-
-    <section class="section-one">
-      <p class="section-one__title">Model S</p>
-      <p class="section-one__subtitle">Добро пожаловать в будущее!</p>
-      <div class="section-one__img"></div>
-      <div class="characteristics-wrap">
-        <div class="characteristics-wrap__item">
-          <div class="decrp">
-            <p class="decrp__img"></p>
-            <div class="decrp__item">
-              <div class="decrp__title">
-                <span class="decrp__value">2,7</span>
-                <span class="decrp__text">сек</span>
-              </div>
-              <p class="decrp__acceleration">0-100 км/час</p>
-            </div>
-          </div>
-          <div class="decrp">
-            <p class="decrp__img decrp__img_dist"></p>
-            <div class="decrp__item decrp__item_dist">
-              <div class="decrp__title">
-                <span class="decrp__value">632</span>
-                <span class="decrp__text">км</span>
-              </div>
-              <p class="decrp__acceleration">запас хода</p>
-            </div>
-          </div>
-        </div>
-        <div class="order-wrap .order-wrap_red">
-          <a class="order-wrap__text order-wrap__text_red" href="#">ТЕСТ ДРАЙВ</a>
-          <a class="order-wrap__button order-wrap__button_red" href="#">ЗАКАЗАТЬ</a>
-        </div>
-      </div>
-      <img class="vector" src="img/vector2.svg" alt="">
-    </section>
-
-    <!-- - - - - - - - - - - - - ВТОРАЯ СЕКЦИЯ - - - - - - - - - - - - -->
-
-    <section class="section">
-      <div class="section__left">
-        <div class="section__left-title">
-          <p class="section__left-title_model">Model S</p>
-        </div>
-      </div>
-      <div class="section__right">
-        <div class="iPad">
-          <div class="iPad-left">
-            <p class="section__right-title">Будущее вождения</p>
-            <p class="section__right-subtitle">
+    <section class="section-second">
+      <h2 class="section-second__title">Model S</h2>
+      <div class="block">
+        <div class="section-second__functions">
+          <div class="section-second__text">
+            <h3 class="block__title">Будущее вождения</h3>
+            <p class="block__subtitle">
               Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей.
-              Оснащена современным 17-&nbsp;дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука,
+              Оснащена современным <nobr>17-дюймовым</nobr> сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука,
               сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.
             </p>
           </div>
-          <div class="iPad-right">
-            <div class="decrp decrp_white">
-              <p class="decrp__img decrp__img_display"></p>
-              <div class="decrp__item decrp__item_white">
-                <div class="decrp__title decrp__title_white">
-                  <span class="decrp__value decrp__value_white">17</span>
-                  <span class="decrp__text decrp__text_white">дюймов</span>
-                </div>
-                <p class="decrp__acceleration decrp__acceleration_white">Большой дисплей</p>
+          <div class="block__functions">
+            <div class="display">
+              <div class="block__display">
+                <span class="display__title">17</span>
+                <span class="display__subtitle">дюймов</span>
               </div>
+              <p class="display__item">Большой дисплей</p>
             </div>
-            <div class="decrp decrp_white decrp_white_wifi">
-              <p class="decrp__img decrp__img_wifi"></p>
-              <div class="decrp__item decrp__item_white_wifi">
-                <div class="decrp__title decrp__title_white">
-                  <span class="decrp__text decrp__text_white_wifi">
-                    Беспроводное
-                    <br>
-                    обновление ПО
-                  </span>
-                </div>
-                <p class="decrp__acceleration decrp__acceleration_white decrp__acceleration_white_wifi">
-                  Повышенная
-                  <br>
-                  функциональность
-                </p>
-              </div>
+            <div class="wifi">
+              <p class="wifi__title">Беспроводное обновление ПО</p>
+              <p class="wifi__item">Повышенная функциональность</p>
             </div>
-            <div class="decrp decrp_white decrp_white_bag">
-              <p class="decrp__img decrp__img_bag"></p>
-              <div class="decrp__item decrp__item_white_bag">
-                <div class="decrp__title decrp__title_white decrp__title_white_bag">
-                  <span class="decrp__value decrp__value_white decrp__value_white_bag">894</span>
-                  <span class="decrp__text decrp__text_white decrp__text_white_bag">литра</span>
-                </div>
-                <p class="decrp__acceleration decrp__acceleration_white decrp__acceleration_white_bag">
-                  Объем грузового
-                  <br>
-                  пространства
-                </p>
+            <div class="volume">
+              <div class="block-volume">
+                <span class="volume__title">894</span>
+                <span class="volume__subtitle">литра</span>
               </div>
+              <p class="volume__item">Объем грузового пространства</p>
             </div>
           </div>
         </div>
-        <div class="order-wrap order-wrap_white">
-          <a class="order-wrap__text order-wrap__text_white" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          <a class="order-wrap__button order-wrap__button_white" href="#">ЗАКАЗАТЬ</a>
+        <div class="section-button">
+          <a class="text__button" href="">УЗНАТЬ БОЛЬШЕ</a>
+          <a class="buy__button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </div>
     </section>
-
-    <!-- - - - - - - - - - - - - ТРЕТЬЯ СЕКЦИЯ - - - - - - - - - - - - -->
-
-    <section class="section section_reverse">
-      <div class="section__left section__left_reverse">
-        <div class="section__left-title section__left-title_reverse">
-          <p class="section__left-title_model section__left-title_model_reverse">Model S</p>
-          <div class="section_car3"></div>
+    <footer class="section-third">
+      <div class="section-third__left">
+        <div class="section-third__info">
+          <div class="section-third__item">
+          <h4 class="section-third__title">Самый безопасный автомобиль в мире</h4>
+          <p class="section-third__subtitle">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</p>
+          </div>
+          <div class="info">
+            <h5 class="protection">Оценка защиты:</h5>
+            <div class="location">
+              <div class="quality">
+                <p class="front">СПЕРЕДИ</p>
+                <div class="quality__star">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+              </div>
+              <div class="quality">
+                <p class="side">СБОКУ</p>
+                <div class="quality__star">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+              </div>
+              <div class="quality">
+                <div>
+                  <span class="side2">СБОКУ</span>
+                  <span class="rack">(СТОЙКА)</span>
+                </div>
+                <div class="quality__star">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+              </div>
+              <div class="quality">
+                <p class="driver">ВОДИТЕЛЬ</p>
+                <div class="quality__star">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+              </div>
+              <div class="quality">
+                <p class="passenger">ПАССАЖИР</p>
+                <div class="quality__star">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                  <img src="img/star.svg">
+                </div>
+              </div>
+            </div>
+            <div class="safety-rank">
+              <h6 class="safety-rank__title">5 звёзд</h6>
+              <p class="safety-rank__subtitle">безопасности</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-third-button">
+          <a class="inf__button" href="">УЗНАТЬ БОЛЬШЕ</a>
+          <a class="order__button" href="#">ЗАКАЗАТЬ</a>
         </div>
       </div>
-      <div class="section__right section__right_reverse">
-        <div class="iPad iPad_reverse">
-          <div class="iPad-left iPad-left_reverse">
-            <p class="section__right-title section__right-title_reverse">Самый безопасный автомобиль в мире</p>
-            <p class="section__right-subtitle section__right-subtitle_reverse">
-              Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного,
-              и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем,
-              боковом, заднем сидении и в ДТП с переворотом авто.
-            </p>
-          </div>
-
-          <div class="iPad_right iPad_right_reserve">
-            <p class="section__right-title section__right-title_reverse_rank">Оценка защиты:</p>
-            <div class="safety">
-              <p class="front">СПЕРЕДИ</p>
-              <div class="safetystar">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-              </div>
-            </div>
-            <div class="safety">
-              <p class="side">СБОКУ</p>
-              <div class="safetystar">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-              </div>
-            </div>
-            <div class="safety">
-              <div>
-                <span class="side-second">СБОКУ</span>
-                <span class="rack">(СТОЙКА)</span>
-              </div>
-              <div class="safetystar">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-              </div>
-            </div>
-            <div class="safety">
-              <p class="driver">ВОДИТЕЛЬ</p>
-              <div class="safetystar">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-              </div>
-            </div>
-            <div class="safety">
-              <p class="passenger">ПАССАЖИР</p>
-              <div class="safety__star">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-                <img src="img/star.svg">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="decrp decrp_reserve">
-          <p class="decrp__img decrp__img_shield"></p>
-          <div class="decrp__item decrp__item_reserve">
-            <div class="decrp__title decrp__title_reserve">
-              <span class="decrp__value decrp__value_reserve">5</span>
-              <span class="decrp__text decrp__text_reserve">звезд</span>
-            </div>
-            <p class="decrp__acceleration decrp__acceleration_reserve">безопасности</p>
-          </div>
-        </div>
-        <div class="order-wrap order-wrap_white order-wrap_white_reserve">
-          <a class="order-wrap__text order-wrap__text_white order-wrap__text_white_reserve" href="#">УЗНАТЬ БОЛЬШЕ</a>
-          <a class="order-wrap__button order-wrap__button_white order-wrap__button_white_reserve" href="#">ЗАКАЗАТЬ</a>
-        </div>
+      <div class="section-third__right">
+        <p class="section-third__text">Model S</p>
+        <img src="img/tesla-car3.svg" class="section-third__icon">
       </div>
-    </section>
-
+    </footer>
   </body>
 </html>
