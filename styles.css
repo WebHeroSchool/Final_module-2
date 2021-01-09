@@ -469,7 +469,7 @@ body {
   color: #fff;
 }
 
-.protection {
+.assessment {
   margin: 55px 0 29px 56px;
   font: 600 30px/37px montserrat, arial, helvetica, sans-serif;
   color: #fff;
@@ -709,13 +709,13 @@ body {
     font-size: 15px;
   }
 
-  .protection,
+  .assessment,
   .location,
   .safety-rank {
     margin-left: 60px;
   }
 
-  .protection {
+  .assessment {
     font-size: 27px;
   }
 
@@ -862,13 +862,13 @@ body {
     font-size: 15px;
   }
 
-  .protection,
+  .assessment,
   .location,
   .safety-rank {
     margin-left: 60px;
   }
 
-  .protection {
+  .assessment {
     font-size: 27px;
   }
 
@@ -1190,7 +1190,7 @@ body {
     display: flex;
   }
 
-  .protection {
+  .assessment {
     margin: 63px 0 0 72px;
   }
 
