@@ -1,514 +1,1794 @@
 body {
-  margin: 0 auto;
-  max-width: 1920px;
-  box-sizing: border-box;
-  padding-bottom: 2625px;
-}
-
-.wrapper {
+  overflow-x: hidden;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  width: 94%;
+  animation: animation 1s;
+}
+
+.menu {
+  display: flex;
   align-items: center;
-  margin: 24px 0 0 42px;
-  margin-right: 0;
+  margin-top: 25px;
+}
+
+.menu-shop {
+  display: flex;
+  align-items: center;
+  margin: 23px 14px 0 13px;
 }
 
 .logo {
-  width: 166px;
-  height: 51px;
-  background: no-repeat no-repeat url(img/tesla-logotype.svg);
-  cursor: pointer;
+  margin: 24px 50px 0 0;
 }
 
-.menu__item {
-  border: dashed 1px red;
-  padding: 0 13px;
-  display: flex;
-  justify-content: space-between;
+.menu__item,
+.menu-shop__item {
+  position: relative;
+  font: 15px/18px montserratsemibold, arial, helvetica, sans-serif;
   text-decoration: none;
-}
-
-.main__ModelS {
-  cursor: default;
-  margin: 0;
-  /*position: absolute;*/
-  width: 370px;
-  height: 110px;
-  left: 535px;
-  top: 133px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 90px;
-  line-height: 110px;
   color: #000;
-  z-index: 1;
 }
 
-.main__subtitle1 {
-  cursor: default;
-  word-spacing: -1px;
-  margin: 0;
-  /*position: absolute;*/
-  width: 245px;
-  height: 19px;
-  left: 600px;
-  top: 233px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
-  z-index: 1;
-}
-
-.menu__item_active {
-  letter-spacing: -0.7px;
+.menu__item_drop {
+  position: relative;
+  font: 40px/90px montserratsemibold, arial, helvetica, sans-serif;
   text-decoration: none;
-  /*position: absolute;*/
-  width: 62px;
-  left: 466.86px;
-  top: 41px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  line-height: 17px;
   color: #e51937;
 }
 
-.menu__item-X {
-  text-decoration: none;
-  /*position: absolute;*/
-  width: 63px;
-  height: 19px;
-  left: 592px;
-  top: 40px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
+.menu__item {
+  margin-right: 46px;
 }
 
-.menu__item-3 {
-  text-decoration: none;
-  /*position: relative;*/
-  width: 61px;
-  height: 19px;
-  left: 680px;
-  top: 40px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
-}
-
-.menu__item-roadster {
-  text-decoration: none;
-  /*position: absolute;*/
-  width: 70px;
-  height: 19px;
-  left: 785px;
-  top: 40px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
-}
-
-.menu__item-energy {
-  text-decoration: none;
-  /*position: absolute;*/
-  width: 55px;
-  height: 19px;
-  left: 901px;
-  top: 40px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
-}
-
-.magazine-page {
-  text-decoration: none;
-  /*position: absolute;*/
-  width: 69px;
-  height: 19px;
-  left: 1177px;
-  top: 40px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
-}
-
-.login-page {
-  text-decoration: none;
-  /*position: absolute;*/
-  width: 50px;
-  height: 19px;
-  left: 1276px;
-  top: 40px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000;
-}
-
-.menu__button {
-  margin-right: 60px;
-  width: 24px;
-  height: 15px;
-  left: 1356px;
-  top: 42px;
+.menu__item:last-child {
   display: flex;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1;
-  background: no-repeat no-repeat url(img/menu-button.svg);
+  margin-right: 0;
 }
 
-.menu__item_active:hover,
-.menu__item-X:hover,
-.menu__item-3:hover,
-.menu__item-roadster:hover,
-.menu__item-energy:hover,
-.magazine-page:hover,
-.login-page:hover,
-.main__button-order:hover,
-.menu__button:hover,
-.learn-more:hover,
-.main__button-order2:hover,
-.main__button-order3:hover,
-.learn-more2:hover {
-  opacity: 0.4;
-  transition: opacity 0.5s;
+.menu-shop__item {
+  font: 600 15px/18px montserrat, arial, helvetica, sans-serif;
+  margin-right: 30px;
+}
+
+.menu__item_active::after {
+  position: absolute;
+  display: block;
+  border-radius: 0 0 60px 60px;
+  content: '';
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #e51937;
+}
+
+.menu__item:hover,
+.menu-shop__item:hover,
+.menu__item_drop:hover,
+.menu-button:hover,
+.main-buy__button:hover,
+.main-text__button:hover,
+.buy__button:hover,
+.text__button:hover,
+.inf__button:hover,
+.order__button:hover {
+  opacity: 0.5;
+}
+
+.menu__item::after,
+.menu-shop__item::after,
+.menu__item_drop::after {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  display: block;
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #e51937;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.5s;
+}
+
+.menu__item:hover::after,
+.menu__item_active::after,
+.menu-shop__item:hover::after,
+.menu__item_drop {
+  opacity: 0.5;
+  width: 100%;
 }
 
 #menu__toggle {
   display: none;
+  opacity: 0;
 }
 
-.menu__item_active::after {
-  top: 24px;
-  position: absolute;
+.menu-button {
+  margin-top: 4px;
+  background: no-repeat url(img/vector1.svg);
+  width: 27px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
-  content: '';
-  width: 100%;
-  height: 3px;
-  background: no-repeat no-repeat url(img/vector.svg);
-}
-.tesla-background {
-  margin: 0;
   position: absolute;
-  width: 1440px;
-  height: 467px;
-  left: 0;
-  top: 135px;
-  background: no-repeat no-repeat url(img/tesla-background.svg);
+  width: 100%;
+  height: 2px;
+  background-color: #e51937;
 }
 
-.tesla-car1 {
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
   margin: 0;
-  position: absolute;
-  width: 968px;
-  height: 450px;
-  left: 199px;
-  top: 278px;
-  background: no-repeat no-repeat url(img/tesla-car1.svg);
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 1px 0 6px rgba(0, 0, 0, 0.2);
+  transition: left 0.5s;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  background-color: transparent;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.section-first {
+  background: no-repeat center -15px url(img/tesla-background-text.svg);
+  animation: animation 2s;
+}
+
+.main__title {
+  font: 90px/88px montserratsemibold, arial, helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 68px 0 0 0;
+  color: #000;
+}
+
+.main__subtitle {
+  font: 500 15px/18px montserrat, arial, helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+.main__icon {
+  display: flex;
+  margin-left: 200px;
+  margin-bottom: 4px;
+}
+
+.main__decrp {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 56%;
+}
+
+.main__characters {
+  display: flex;
+}
+
+.main-speed__column {
+  display: flex;
+  margin-right: 70px;
 }
 
 .speed {
-  margin: 0;
-  position: absolute;
-  width: 380px;
-  height: 65px;
-  left: 317px;
-  top: 754px;
-  background: no-repeat no-repeat url(img/tesla-speed.svg);
+  background: no-repeat left 35px url(img/speed.svg);
 }
 
-.testdrive {
-  margin: 0;
-  position: absolute;
-  width: 123px;
-  height: 30px;
-  left: 797px;
-  top: 774px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background: no-repeat no-repeat url(img/tesla-testdrive.svg);
+.main-speed__title {
+  margin: 27px 7px 0 65px;
+  font: 35px/43px montserratsemibold, arial, helvetica, sans-serif;
 }
 
-.main__button-order {
+.main-speed__text {
+  margin-top: 43px;
+  font: 600 20px/24px montserrat, sans-serif;
+}
+
+.main-speed__item {
+  margin: 0 0 0 65px;
+  font: 12px/15px montserratregular, arial, helvetica, sans-serif;
+}
+
+.main-distance__column {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: #e51937;
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  left: 958px;
-  top: 764px;
-  border: 2px solid #e51937;
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
-.subpage {
-  margin: 0;
-  position: absolute;
+.distance {
+  background: no-repeat 5px 30px url(img/road.svg);
+}
+
+.main-distance__title {
+  margin: 25px 6px 0 52px;
+  font: 600 35px/41px montserrat, arial, helvetica, sans-serif;
+}
+
+.main-distance__text {
+  margin-top: 40px;
+  font: 600 20px/24px montserrat, arial, helvetica, sans-serif;
+}
+
+.main-distance__item {
+  margin-top: 0;
+  margin-left: 55px;
+  font: 12px/15px montserratregular, arial, helvetica, sans-serif;
+}
+
+.main__button {
+  display: flex;
+  background: no-repeat 5px 45px url(img/steering-wheel.svg);
+}
+
+.main-text__button {
+  width: max-content;
+  margin: 48px 36px 0 35px;
+  text-decoration: none;
+  color: #000;
+  font: 700 13px/15px montserrat, arial, helvetica, sans-serif;
+}
+
+.main-buy__button {
+  margin-top: 35px;
+  font: 700 13px/15px montserrat, arial, helvetica, sans-serif;
+  color: #e51937;
+  padding: 10px 43px;
+  border: 3px solid #e51937;
+}
+
+.main-buy__button:hover::after {
+  border-color: #e51937;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+.vector {
+  margin: 23px auto 34px;
   width: 34px;
   height: 20px;
-  left: 703px;
-  top: 846px;
-  background: no-repeat url(img/vector2.svg);
+  background: no-repeat url(img/vector.svg);
 }
 
-.main__background1 {
-  margin: 0;
-  position: absolute;
+.section-second {
+  display: flex;
+  justify-content: space-between;
+  background: no-repeat left 56px url(img/tesla-car2.png);
+  animation: animation 3s;
+}
+
+.section-second__title {
+  margin: 65px 0 0 80px;
+  font: 600 70px/85px montserrat, arial, helvetica, sans-serif;
+  color: #e51937;
+}
+
+.block {
   width: 440px;
   height: 900px;
-  left: 1000px;
+  right: 1000px;
   top: 900px;
   background: #e51937;
 }
 
-.main__subtitle2 {
+.block__title {
+  margin: 53px 0 12px 50px;
+  font: 600 30px/36px montserrat, arial, helvetica, sans-serif;
   color: #fff;
-  margin: 0;
-  position: absolute;
-  width: 316px;
-  height: 37px;
-  left: 1052px;
-  top: 951px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-size: 30px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }
 
-.tesla-car2 {
-  margin: 0;
-  position: absolute;
-  width: 1440px;
-  height: 844px;
-  left: 0;
-  top: 956px;
-  background: no-repeat no-repeat url(img/tesla-car2.svg);
-}
-
-.main__ModelS2 {
-  cursor: default;
-  margin: 0;
-  position: absolute;
-  width: 288px;
-  height: 86px;
-  left: 80px;
-  top: 952px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 70px;
-  line-height: 110px;
-  color: #e51937;
-  z-index: 1;
-}
-
-.main__subtitle3 {
+.block__subtitle {
+  margin: 0 70px 0 50px;
+  font: 500 15px/18px montserrat, arial, helvetica, sans-serif;
   color: #fff;
-  margin: 0;
-  position: absolute;
-  width: 316px;
-  height: 200px;
-  left: 1052px;
-  top: 1002px;
-  font: 500 15px/18px Montserrat-Medium, arial, helvetica, sans-serif;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+}
+
+.section-second__functions {
+  margin-bottom: 170px;
 }
 
 .display {
-  margin: 0;
-  position: absolute;
-  width: 187px;
-  height: 65px;
-  left: 1052px;
-  top: 1259px;
-  background: no-repeat url(img/display.svg);
+  background: no-repeat left 12px url(img/display.svg);
+  margin: 60px 0 30px 52px;
+  height: 70px;
 }
 
-.wireless-soft {
-  margin: 0;
-  position: absolute;
-  width: 269px;
-  height: 71px;
-  left: 1048px;
-  top: 1359px;
-  background: no-repeat url(img/wireless-soft.svg);
-}
-
-.bag-capacity {
-  margin: 0;
-  position: absolute;
-  width: 202px;
-  height: 71px;
-  left: 1052px;
-  top: 1455px;
-  background: no-repeat url(img/bag-capacity.svg);
-}
-
-.main__button-order2 {
+.block__display {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: #fff;
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  left: 1236px;
-  top: 1697px;
-  border: 2px solid #fff;
-  cursor: pointer;
-  box-sizing: border-box;
 }
 
-.learn-more {
-  margin: 0;
-  background: no-repeat no-repeat url(img/learn-more.svg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+.display__title {
+  margin: 0 10px 0 55px;
+  font: 600 35px/43px montserrat, arial, helvetica, sans-serif;
   color: #fff;
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  left: 1049px;
-  top: 1705px;
-  cursor: pointer;
-  box-sizing: border-box;
 }
-.main__five-stars {
-  margin: 0;
-  background: no-repeat url(img/five-stars.svg);
-  position: absolute;
+
+.display__subtitle {
+  margin-top: 15px;
+  font: 600 20px/24px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.display__item{
+  margin: 0 0 0 57px;
+  font: 400 12px/15px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.wifi {
+  align-items: flex-start;
+  background: no-repeat left 15px url(img/wifi.svg);
+  margin: 0 0 27px 48px;
+}
+
+.wifi__title {
+  width: 171px;
+  margin: 32px 0 0 64px;
+  font: 600 20px/18px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.wifi__item {
+  width: 171px;
+  margin: 3px 0 0 65px;
+  font: 400 12px/15px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.volume {
+  margin: 0 0 0 52px;
+  background: no-repeat left url(img/bag.svg);
+}
+
+.block-volume {
+  display: flex;
+  margin-left: 61px;
+}
+
+.volume__title {
+  margin: 0 10px 0 0;
+  font: 600 35px/40px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.volume__subtitle {
+  margin-top: 12px;
+  font: 600 20px/24px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.volume__item{
+  width: 171px;
+  margin: 0px 0 0 62px;
+  font: 400 12px/15px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.section-button {
+  display: flex;
+  width: 79%;
+  margin: auto;
+  background: no-repeat left url(img/inf.svg);
+  color: #fff;
+}
+
+.text__button {
+  margin: 10px 34px 0 30px;
+  text-decoration: none;
+  color: #fff;
+  font: 700 13px/15px montserrat, arial, helvetica, sans-serif;
+}
+
+.buy__button {
+  font: 700 13px/15px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+  padding: 10px 40px;
+  border: 3px solid #fff;
+}
+
+.buy__button:hover::after {
+  border-color: #fff;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
+.section-third {
+  display: flex;
+  animation: animation 4s;
+}
+
+.section-third__left {
+  margin-top: 0;
   width: 440px;
   height: 900px;
   left: 0px;
   top: 1800px;
+  background: #e51937;
 }
 
-.main__subtitle4 {
+.section-third__title {
+  width: 400px;
+  margin: 50px 70px 0 56px;
+  font: 600 30px/37px montserrat, arial, helvetica, sans-serif;
   color: #fff;
-  margin: 0;
-  position: absolute;
-  width: 316px;
-  height: 74px;
-  left: 56px;
-  top: 1851px;
-  font-family: Montserrat-SemiBold, arial, helvetica, sans-serif;
-  font-size: 30px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }
 
-.main__subtitle5 {
+.section-third__subtitle {
+  margin: 15px 70px 0 56px;
+  font: 500 15px/18px montserrat, arial, helvetica, sans-serif;
   color: #fff;
-  margin: 0;
-  position: absolute;
-  width: 316px;
-  height: 134px;
-  left: 56px;
-  top: 1938px;
-  font: 500 15px/18px Montserrat-Medium, arial, helvetica, sans-serif;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }
 
-.main__button-order3 {
+.protection {
+  margin: 55px 0 29px 56px;
+  font: 600 30px/37px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.location  {
+  margin-left: 56px;
+  font: 700 17px/21px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+}
+
+.rack {
+  font: 700 10px/12px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.quality {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: #fff;
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  left: 225px;
-  top: 2600px;
-  border: 2px solid #fff;
-  cursor: pointer;
-  box-sizing: border-box;
+  height: 21px;
+  margin: 0 91px 16px 0;
 }
 
-.learn-more2 {
-  margin: 0;
-  background: no-repeat no-repeat url(img/learn-more.svg);
+.safety-rank {
+  margin: 105px 0 57px 66px;
+  background: no-repeat left url(img/shield.png);
+  color: #fff;
+}
+
+.safety-rank__title {
+  margin: 10px 0 0 86px;
+  font: 600 50px/55px montserrat, arial, helvetica, sans-serif;
+}
+
+.safety-rank__subtitle {
+  margin: 0 0 0 84px;
+  font: 600 25px/30px montserrat, arial, helvetica, sans-serif;
+  transform: translate(0px, -6px);
+}
+
+.section-third__right {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Montserrat-ExtraBold, arial, helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
+  position: relative;
+}
+
+.section-third__text {
+  font: 600 197px/244px montserrat, arial, helvetica, sans-serif;
+  margin: 100px 0 0 191px;
+  color: #e51937;
+  opacity: 0.1;
+}
+
+.section-third__icon {
+  position: absolute;
+  margin: 171px 0 0 -95px;
+}
+
+.section-third-button {
+  display: flex;
+  width: 82%;
+  margin: auto;
+  background: no-repeat left url(img/inf.svg);
+}
+
+.inf__button {
+  margin: 10px 35px 0 30px;
+  text-decoration: none;
   color: #fff;
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  left: 38px;
-  top: 2608px;
-  cursor: pointer;
-  box-sizing: border-box;
+  font: 700 13px/15px montserrat, arial, helvetica, sans-serif;
 }
 
-.tesla-background2 {
-  margin: 0;
-  position: absolute;
-  width: 793px;
-  height: 269px;
-  left: 647px;
-  top: 1942px;
-  background: no-repeat no-repeat url(img/tesla-background2.svg);
+.order__button {
+  font: 700 13px/15px montserrat, arial, helvetica, sans-serif;
+  color: #fff;
+  padding: 10px 40px;
+  border: 3px solid #fff;
 }
 
-.tesla-car3 {
-  margin: 0;
-  position: absolute;
-  width: 1049px;
-  height: 592px;
-  left: 345px;
-  top: 1971px;
-  background: no-repeat url(img/tesla-car3.svg);
+.order__button:hover::after {
+  border-color: #fff;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
 }
 
-.WHS-logo {
-  margin: 0;
+.security {
+  display: flex;
   position: absolute;
-  width: 93px;
-  height: 40px;
-  left: 1328px;
-  top: 2650px;
-  background: no-repeat no-repeat url(img/WHS-Prod.svg);
+  font: 600 17px/15px montserrat, arial, helvetica, sans-serif;
+  width: 170px;
+}
+
+.item1 {
+  margin: 221px 0 0 169px;
+}
+
+.item2 {
+  margin: 175px 0 0 448px;
+}
+
+.item3 {
+  align-items: flex-end;
+  width: 250px;
+  margin: 591px 0 0 503px;
+}
+
+.main-buy__button,
+.buy__button,
+.order__button {
+  height: fit-content;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .section-first {
+    background-size: contain;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .menu-shop {
+    margin-right: 45px;
+  }
+
+
+  .menu__item {
+    margin-right: 36px;
+    font: 600 13px/18px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .menu-shop__item {
+    margin-right: 25px;
+    font: 600 13px/18px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .menu__btn {
+    right: 55px;
+    width: 24px;
+    height: 25px
+  }
+
+
+  .main {
+    background: no-repeat center 0 url(img/tesla-wordmark-big.svg);
+    background-size: 950px;
+  }
+
+  .main__title {
+    margin-top: 40px;
+    font-size: 80px;
+  }
+
+  .main__icon {
+    margin-left: 0;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .tesla-main {
+    margin-bottom: 0;
+    width: 700px;
+  }
+
+  .main__decrp {
+    width: 60%;
+  }
+
+  .main-speed__column {
+    display: flex;
+    margin-right: 40px;
+  }
+
+  .vector {
+    margin: 45px 0 100px 50%;
+  }
+
+  .section-second {
+    width: 100vw;
+    background: no-repeat left url(img/adaptability/ipad/salon.svg);
+    background-size: 1100px 800px;
+  }
+
+  .block {
+    width: 410px;
+    height: 700px;
+  }
+
+  .block__title {
+    font: 600 25px/36px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .block__subtitle {
+    margin-right: 20px;
+    font-size: 13px;
+  }
+
+  .section-second__functions {
+    margin-bottom: 60px;
+  }
+
+  .display {
+    margin-top: 45px;
+  }
+
+  .section-button,
+  .section-third-button {
+    width: 86%;
+  }
+
+  .section-third__left {
+    width: 440px;
+  }
+
+  .section-third__title {
+    margin: 50px 70px 0 64px;
+    font-size: 25px;
+  }
+
+  .section-third__subtitle {
+    margin: 15px 60px 0 60px;
+    font-size: 15px;
+  }
+
+  .protection,
+  .location,
+  .safety-rank {
+    margin-left: 60px;
+  }
+
+  .protection {
+    font-size: 27px;
+  }
+
+  .safety-rank {
+    margin: 60px 0 50px 60px;
+  }
+
+  .safety-rank__title {
+    background-size: 60px;
+    font-size: 45px;
+  }
+
+  .inf__button,
+  .order__button {
+    font-size: 14px;
+  }
+
+  .section-third__icon {
+    max-width: 845px;
+    margin-top: 250px;
+  }
+
+  .security {
+    width: 15vw;
+  }
+
+  .item1 {
+    font-size: 17px;
+    margin: 200px 0 0 117px;
+  }
+
+  .item2 {
+    font-size: 17px;
+    margin: 190px 0 0 340px;
+  }
+
+  .item3 {
+    font-size: 17px;
+    margin: 545px 0 0 385px;
+  }
+
+  .section-third__text {
+    font-size: 185px;
+    margin: 140px 0 0 105px;
+  }
+}
+
+@media screen and (min-width: 941px) and (max-width: 1200px) {
+  .section-first {
+    background-size: contain;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .menu__item {
+    margin-right: 36px;
+    font: 600 13px/18px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .menu-shop__item {
+    margin-right: 25px;
+    font: 600 13px/18px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .menu__btn {
+    top: 40px;
+    right: 30px;
+    width: 23px;
+  }
+
+  .main {
+    background: no-repeat center 15px url(img/1024/background.svg);
+  }
+
+  .tesla-main {
+    height: 350px;
+  }
+
+  .main__icon {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .main__decrp {
+    width: 75%;
+    margin: auto;
+  }
+
+  .main-speed__column {
+    display: flex;
+    margin-right: 40px;
+  }
+
+  .vector {
+    margin: 45px 0 100px 50%;
+  }
+
+  .section-second {
+    width: 100vw;
+    background: no-repeat left 60px url(img/adaptability/ipad/salon.svg);
+    background-size: cover;
+  }
+
+  .block {
+    width: 410px;
+    height: 700px;
+  }
+
+  .block__title {
+    font: 600 25px/36px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .block__subtitle {
+    margin-right: 20px;
+    font-size: 13px;
+  }
+
+  .section-second__functions {
+    margin-bottom: 60px;
+  }
+
+  .display {
+    margin-top: 45px;
+  }
+
+  .section-button,
+  .section-third-button {
+    width: 86%;
+  }
+
+  .section-third__left {
+    width: 440px;
+  }
+
+  .section-third__title {
+    margin: 50px 70px 0 64px;
+    font-size: 25px;
+  }
+
+  .section-third__subtitle {
+    margin: 15px 60px 0 60px;
+    font-size: 15px;
+  }
+
+  .protection,
+  .location,
+  .safety-rank {
+    margin-left: 60px;
+  }
+
+  .protection {
+    font-size: 27px;
+  }
+
+  .safety-rank {
+    margin: 60px 0 50px 60px;
+  }
+
+  .safety-rank__title {
+    background-size: 60px;
+    font-size: 45px;
+  }
+
+  .inf__button,
+  .order__button {
+    font-size: 14px;
+  }
+
+  .section-third__icon {
+    max-width: 600px;
+    margin-top: 350px;
+  }
+
+  .security {
+    width: 15vw;
+  }
+
+  .item1 {
+    font-size: 15px;
+    margin: 230px 0 0 54px;
+  }
+
+  .item2 {
+    font-size: 15px;
+    margin: 265px 0 0 214px;
+  }
+
+  .item3 {
+    font-size: 15px;
+    margin: 555px 0 0 244px;
+  }
+
+  .section-third__text {
+    font-size: 100px;
+    margin: 230px 0 0 60px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 940px) {
+  .menu-button {
+    background: no-repeat url(img/adaptability/ipad/vector1.svg);
+    margin-top: 0px;
+    width: 40px;
+    height: 26px;
+  }
+
+
+  .section-first {
+    background: no-repeat url(img/adaptability/ipad/background.svg);
+    background-position-y: 77px;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .header {
+    width: 96%;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .menu,
+  .menu-shop__item {
+    display: none;
+  }
+
+  .menu__line {
+    display: none;
+  }
+
+  .menu__btn {
+    top: 35px;
+    right: 54px;
+    width: 25px
+  }
+
+  .tesla-main {
+    margin-bottom: 21px;
+    width: 703px;
+    height: 325px;
+  }
+
+  .main {
+    background: no-repeat center top 80px url(img/adaptability/ipad/background.svg);
+  }
+
+  .main__title {
+    margin-top: 95px;
+    line-height: 85px;
+    height: 82px;
+  }
+
+  .main__characters{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+  }
+
+  .tesla__title {
+    margin-bottom: 90px;
+  }
+
+  .main__icon {
+    margin-left: 0;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .main__decrp {
+    display: block;
+    width: 63%;
+    margin: auto;
+  }
+
+  .speed{
+    background: no-repeat left 20px url(img/adaptability/ipad/speed.svg);
+  }
+
+  .distance {
+    background: no-repeat left 12px url(img/adaptability/ipad/road.svg);
+  }
+
+  .main-speed__column {
+    height: 60px;
+    margin-right: 0px;
+  }
+
+  .main-distance__column {
+    height: 60px;
+  }
+
+  .main-speed__title {
+    margin: 5px 0px 0 85px;
+    font: 600 50px/61px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__title {
+    margin: 2px 0 0 60px;
+    font: 600 50px/61px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-speed__text,
+  .main-distance__text {
+    margin: 25px 10px 0 10px;
+    font: 600 20px/24px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-speed__item {
+    margin-left: 85px;
+    font: 400 12px/15px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__item {
+    margin: 0 0 10px 60px;
+    font: 400 12px/15px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin: auto;
+    background: no-repeat left 26px url(img/adaptability/ipad/wheel.svg);
+  }
+
+  .main-text__button {
+    margin: 35px 0 0 45px;
+    font: 700 16px/20px montserrat, arial, helvetica, sans-serif;
+    color: #e51937;
+  }
+
+  .main-buy__button {
+    font: 700 15px/16px montserrat, arial, helvetica, sans-serif;
+    margin-top: 15px;
+    color: #fff;
+    padding: 17px 64px;
+    outline: solid 2px #fff;
+    background: #e51937;
+  }
+
+  .vector  {
+    margin: 60px auto 60px;
+  }
+
+  .section-second{
+    background: no-repeat left -50px url(img/adaptability/ipad/salon.png);
+    display: flex;
+    flex-direction: column;
+    background-position-y: 0px;
+    width: 100vw;
+  }
+
+  .section-second__title {
+    margin: 10px 0 0 434px;
+  }
+
+  .block {
+    margin-top: 407px;
+    width: 100vw;
+    height: 487px;
+  }
+
+  .section-second__functions {
+    display: flex;
+    margin-bottom: 67px;
+  }
+
+  .block__title {
+    margin: 57px 0 0 34px;
+  }
+
+  .block__subtitle {
+    margin: 21px 63px 0 34px;
+    width: 303px;
+  }
+
+  .block__functions {
+    margin-right: 82px;
+  }
+
+  .block__display {
+    height: 43px;
+  }
+
+  .display {
+    margin: 53px 0 20px 55px;
+  }
+
+  .display__title {
+    margin: 3px 10px 0 55px;
+  }
+
+  .display__subtitle {
+    margin-top: 18px;
+  }
+
+  .distance__item {
+    margin-left: 54px;
+  }
+
+  .wifi {
+    background: no-repeat left 15px url(img/wifi.svg);
+    margin: 0 0 25px 50px;
+  }
+
+  .wifi__title,
+  .wifi__item {
+    margin: 2px 0 0 65px;
+  }
+
+  .volume {
+    margin-left: 54px;
+  }
+
+  .block-volume {
+    margin-left: 62px;
+  }
+
+  .section-button {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background: no-repeat left url(img/adaptability/ipad/inf.svg);
+  }
+
+  .text__button {
+    font: 700 16px/20px montserrat, arial, helvetica, sans-serif;
+    margin: 18px 0 0 44px;
+  }
+
+  .buy__button {
+    font: 700 16px/20px montserrat, arial, helvetica, sans-serif;
+    padding: 15px 62px;
+  }
+
+  .section-third {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-third__left{
+    order: 2;
+    width: 100vw;
+    height: 487px;
+    margin-top: 38px;
+  }
+
+  .section-third__item {
+    width: 350px;
+  }
+
+  .section-third__title,
+  .section-third__subtitle {
+    margin-left: 34px;
+    width: 330px;
+  }
+
+  .section-third__title {
+    margin-top: 63px;
+  }
+
+  .section-third__subtitle {
+    margin-top: 13px;
+  }
+
+  .section-third__info {
+    display: flex;
+  }
+
+  .protection {
+    margin: 63px 0 0 72px;
+  }
+
+  .location {
+    margin: 29px 0 0 72px;
+  }
+
+  .quality {
+    margin-right: 0;
+  }
+
+  .rack {
+    font-size: 12px;
+  }
+
+  .front {
+    margin-right: 60px;
+  }
+
+  .section-third-button {
+    display: flex;
+    justify-content: space-between;
+    background: no-repeat left url(img/adaptability/ipad/inf.svg);
+    margin-top: 55px;
+    width: 60%;
+  }
+
+  .inf__button {
+    margin: 17px 0 0 44px;
+    font: 700 16px/20px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .order__button {
+    font: 700 16px/20px montserrat, arial, helvetica, sans-serif;
+    padding: 14px 62px;
+  }
+
+  .section-third__right {
+    order: 1;
+    background: no-repeat 0 78px url(img/adaptability/ipad/ipadcar.svg);
+    width: 100vw;
+    height: 500px;
+  }
+
+  .section-third__text {
+    z-index: -1;
+    font: 600 149px/180px montserrat, arial, helvetica, sans-serif;
+    margin: 40px 0 0 82px;
+  }
+
+  .item1 {
+    margin: 114px 0 0 173px;
+  }
+
+  .item2 {
+    margin: 80px 0 0 372px;
+  }
+
+  .item3 {
+    margin: 364px 0 0 412px;
+  }
+
+  .security {
+    font: 600 15px/13px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .security-1,
+  .security-2,
+  .security-3 {
+    width: 130px;
+  }
+
+  .security-3 {
+    margin: 58px 0 0 10px;
+    width: 180px;
+  }
+
+  .line__item1 {
+    height: 201px;
+  }
+
+  .line__item2 {
+    height: 94px;
+  }
+
+  .line__item3 {
+    height: 87px;
+  }
+
+  .safety-rank,
+  .section-third__icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 750px) {
+  .section-first {
+    background-size: contain;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .logo {
+    margin-top: 5px;
+  }
+
+  .logo__icon {
+    width: 138px;
+    height: 42px;
+  }
+
+  .menu,
+  .menu-shop__item {
+    display: none;
+  }
+
+  .menu-shop {
+    margin-top: 20px;
+  }
+
+  .menu__line {
+    margin-bottom: 15px;
+  }
+
+  .menu__btn {
+    top: 15px;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+  }
+
+  .main {
+    background: no-repeat center 25px url(img/adaptability/mobile/background.svg);
+    background-size: 100vw;
+  }
+
+  .main__title {
+    margin-top: 20px;
+    font: 600 50px/61px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    font: 500 10px/12px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .tesla-main {
+    margin: 10px 0 -4px 0;
+    width: 80vw;
+  }
+
+  .main__icon {
+    background-size: 100vw;
+    margin: 0 0 7px 0;
+    justify-content: center;
+  }
+
+  .main__decrp {
+    width: 75%;
+    margin: auto;
+    display: block;
+  }
+
+  .main__characters {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 43px;
+  }
+
+  .speed{
+    background: no-repeat left 33px url(img/adaptability/mobile/speed.svg);
+  }
+
+  .main-speed__column {
+    margin-right: 0px;
+    height: 55px;
+  }
+
+  .main-speed__title {
+    margin: 23px 3px 0 50px;
+    font: 600 27px/33px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__title {
+    font: 600 27px/33px montserrat, arial, helvetica, sans-serif;
+    margin: 25px 5px 0 35px;
+  }
+
+  .main-speed__text,
+  .main-distance__text {
+    margin: 35px 5px 0 5px;
+    font: 600 15px/18px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-speed__item {
+    margin-left: 50px;
+    font: 400 10px/12px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__item {
+    margin: 0 0 0 38px;
+    font: 400 10px/12px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .distance {
+    background: no-repeat left 26px url(img/adaptability/mobile/road.svg);
+  }
+
+  .main__button {
+    background: no-repeat left url(img/adaptability/mobile/wheel.svg);
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .main-text__button {
+    margin: 10px 15px 0 30px;
+  }
+
+  .main-buy__button {
+    margin-top: 0;
+    padding: 10px 43px;
+    color: #fff;
+    outline: solid 2px #fff;
+    background: #e51937;
+  }
+
+  .vector {
+    margin: 25px 0 100px 50%;
+  }
+
+  .section-second {
+    display: block;
+    width: 100vw;
+    background: no-repeat left -100px url(img/adaptability/mobile/salon.svg);
+    background-size: 100vw 450px;
+  }
+
+  .section-second__title {
+    margin: auto;
+    font-size: 0;
+  }
+
+  .block {
+    margin-top: 202px;
+    width: 100vw;
+    height: 304px;
+  }
+
+  .block__title {
+    padding-top: 19px;
+    margin-left: 28px;
+  }
+
+  .block__subtitle {
+    width: 80vw;
+    margin: 10px 0 0 29px;
+  }
+
+  .section-second__text {
+    margin-left: 35px;
+  }
+
+  .section-third__right {
+    background: no-repeat 0px 75px url(img/adaptability/mobile/mobcar2.svg);
+    width: 100vw;
+    height: 253px;
+  }
+
+  .section-third__text {
+    z-index: -1;
+    margin: 36px 0 0 -7px;
+    font: 600 100px/100px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .security {
+    margin: 0 0 0 0;
+  }
+
+  .item1,
+  .item2,
+  .item3{
+    margin-left: 120px;
+  }
+
+  .security {
+    font: 600 7px/7px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .security-1 {
+    width: 60px;
+    margin-top: 75px;
+  }
+
+  .security-2 {
+    margin-top: 57px;
+  }
+
+  .line__item1 {
+    margin: 75px 0 0 89px;
+    height: 97px;
+  }
+
+  .line__item2 {
+    margin: 59px 0 0 185px;
+    height: 46px;
+  }
+
+  .line__item3 {
+    margin: 201px 0 0 205px;
+    height: 41px;
+  }
+
+  .section-third__left{
+    order: 2;
+    margin-top: 40px;
+    width: 100vw;
+    height: 303px;
+  }
+
+  .section-third__info {
+    margin-left: 35px;
+  }
+
+  .section-third__title,
+  .section-third__subtitle {
+    width: 80vw;
+    margin: 16px 17px 0 32px;
+  }
+
+  .section-third {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block__functions,
+  .section-button,
+  .info,
+  .section-third__icon,
+  .section-third-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .section-first {
+    background: no-repeat center 79px url(img/adaptability/mobile/background.svg);
+    background-size: contain;
+  }
+
+  .wrapper {
+    width: 100vw;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .logo {
+    margin: 22px 0 0 2px;
+  }
+
+  .logo__icon {
+    width: 138px;
+    height: 42px;
+  }
+
+  .menu,
+  .menu-shop__item {
+    display: none;
+  }
+
+  .menu-shop {
+    margin: 23px 18px 0 13px;
+  }
+
+  .menu__btn {
+    top: 15px;
+    right: 54px;
+  }
+
+  .main {
+    background: no-repeat center 80px url(img/adaptability/mobile/background.svg);
+  }
+
+  .main__title {
+    margin-top: 26px;
+    height: 60px;
+    font: 600 50px/61px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    font: 500 10px/12px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .tesla-main {
+    margin: 25px 0 -8px 0;
+    height: 166px;
+  }
+
+  .main__decrp {
+    width: 85%;
+    margin: auto;
+    display: block;
+  }
+
+  .main__icon {
+    margin: 0 0 10px 0;
+    justify-content: center;
+  }
+
+  .main__characters {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 43px;
+  }
+
+  .speed{
+    background: no-repeat left 33px url(img/adaptability/mobile/speed.svg);
+  }
+
+  .main-speed__column {
+    margin-right: 0px;
+    height: 55px;
+  }
+
+  .main-speed__title {
+    margin: 23px 3px 0 50px;
+    font: 600 27px/33px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__title {
+    font: 600 27px/33px montserrat, arial, helvetica, sans-serif;
+    margin: 25px 5px 0 35px;
+  }
+
+  .main-speed__text,
+  .main-distance__text {
+    margin: 35px 5px 0 5px;
+    font: 600 15px/18px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-speed__item {
+    margin-left: 50px;
+    font: 400 10px/12px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .main-distance__item {
+    margin: 0 0 0 38px;
+    font: 400 10px/12px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .distance {
+    background: no-repeat left 26px url(img/adaptability/mobile/road.svg);
+  }
+
+  .main__button {
+    background: no-repeat left url(img/adaptability/mobile/wheel.svg);
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  .main-text__button {
+    margin: 12px 15px 0 30px;
+    color: #e51937;
+  }
+
+  .main-buy__button {
+    margin-top: 0;
+    padding: 10px 40px;
+    color: #fff;
+    outline: solid 2px #fff;
+    background: #e51937;
+  }
+
+  .vector {
+    margin: 29px auto 0px;
+  }
+
+  .section-second {
+    display: block;
+    width: 100vw;
+    background: no-repeat left -3px url(img/adaptability/mobile/salon.png);
+    background-size: 100vw;
+  }
+
+  .section-second__title {
+    margin: auto;
+    font-size: 0;
+  }
+
+  .block {
+    margin-top: 237px;
+    width: 100vw;
+    height: 304px;
+  }
+
+  .block__title {
+    padding-top: 19px;
+    margin-left: 26px;
+    margin-bottom: 11px;
+  }
+
+  .block__subtitle {
+    width: 340px;
+    margin-left: 27px;
+  }
+
+  .section-third__right {
+    background: no-repeat 0px 57px url(img/adaptability/mobile/mobcar.svg);
+    width: 100vw;
+    height: 261px;
+  }
+
+  .section-third__text {
+    z-index: -1;
+    margin: 36px 0 0;
+    font: 600 91px/100px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .security {
+    width: 250px;
+    margin: 0;
+  }
+
+  .security {
+    font: 600 7px/7px montserrat, arial, helvetica, sans-serif;
+  }
+
+  .security-1 {
+    width: 60px;
+    margin-top: 75px;
+  }
+
+  .security-2 {
+    margin-top: 57px;
+  }
+
+  .security-3 {
+    position: absolute;
+    width: 70px;
+    top: 232px;
+    left: 210px;
+
+  }
+
+  .line__item1 {
+    margin: 75px 0 0 89px;
+    height: 97px;
+  }
+
+  .line__item2 {
+    margin: 59px 0 0 185px;
+    height: 46px;
+  }
+
+  .line__item3 {
+    margin: 201px 0 0 205px;
+    height: 41px;
+  }
+
+  .section-third__left{
+    order: 2;
+    margin-top: 33px;
+    width: 100vw;
+    height: 303px;
+  }
+
+  .section-third__title {
+    width: 320px;
+    margin: 18px 17px 0 31px;
+  }
+
+  .section-third__subtitle {
+    width: 320px;
+    margin: 12px 17px 0 31px;
+  }
+
+  .section-third {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block__functions,
+  .section-button,
+  .info,
+  .section-third__icon,
+  .section-third-button {
+    display: none;
+  }
 }
