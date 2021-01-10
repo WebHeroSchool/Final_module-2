@@ -9,7 +9,7 @@ body {
   justify-content: space-between;
   margin: auto;
   width: 94%;
-  animation: animation 1s;
+  animation: animation 3s;
 }
 
 .menu {
@@ -34,13 +34,6 @@ body {
   font: 15px/18px montserratsemibold, arial, helvetica, sans-serif;
   text-decoration: none;
   color: #000;
-}
-
-.menu__item_drop {
-  position: relative;
-  font: 40px/90px montserratsemibold, arial, helvetica, sans-serif;
-  text-decoration: none;
-  color: #e51937;
 }
 
 .menu__item {
@@ -70,7 +63,6 @@ body {
 
 .menu__item:hover,
 .menu-shop__item:hover,
-.menu__item_drop:hover,
 .menu-button:hover,
 .main-buy__button:hover,
 .main-text__button:hover,
@@ -82,8 +74,7 @@ body {
 }
 
 .menu__item::after,
-.menu-shop__item::after,
-.menu__item_drop::after {
+.menu-shop__item::after {
   position: absolute;
   left: 0;
   top: 22px;
@@ -98,15 +89,9 @@ body {
 
 .menu__item:hover::after,
 .menu__item_active::after,
-.menu-shop__item:hover::after,
-.menu__item_drop {
+.menu-shop__item:hover::after {
   opacity: 0.5;
   width: 100%;
-}
-
-#menu__toggle {
-  display: none;
-  opacity: 0;
 }
 
 .menu-button {
@@ -788,8 +773,8 @@ body {
     width: 23px;
   }
 
-  .main {
-    background: no-repeat center 15px url(img/1024/background.svg);
+  .section-first {
+    background: no-repeat center 15px url(img/adaptability/1024/background.svg);
   }
 
   .tesla-main {
@@ -1542,7 +1527,7 @@ body {
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 450px) {
+@media screen and (min-width: 300px) and (max-width: 450px) {
   .section-first {
     background: no-repeat center 79px url(img/adaptability/mobile/background.svg);
     background-size: contain;
